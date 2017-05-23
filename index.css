@@ -1,0 +1,7 @@
+#student-section{
+    column-count: 4;
+}
+#student-section img{
+    width: 100% !important;
+    height: auto !important;
+}
