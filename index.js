@@ -1,6 +1,7 @@
 //students
 
-var  students =[{
+var  students =[
+    {
    "firstname": "Alex",
     "lastname": "Accarino",
    "website": "#"
@@ -85,7 +86,7 @@ var  students =[{
     "lastname": "Attias",
     "website": "#"
 }, {
-    "firstname": "Jusin",
+    "firstname": "Justin",
     "lastname": "Piotroski",
     "website": "#"
 }, {
@@ -179,8 +180,10 @@ var  students =[{
 var selected = null;
 var studentSection = document.getElementById('student-section');
 var __dirname ="/SrProjects";
+var toast = document.getElementById('toast');
 
 for(var i=0; i<students.length; i++){
+
     selected = i;
     var fullname = students[i].firstname + " " + students[i].lastname;
     var urlname = fullname.replace(/\s+/g, '-').toLowerCase();
@@ -199,4 +202,16 @@ for(var i=0; i<students.length; i++){
 
     student.appendChild(studentImg);
     studentSection.appendChild(student);
+}
+
+var allStudents = document.querySelectorAll(".student-profile");
+
+for(var j = 0; j<allStudents.length; j++){
+    allStudents[j].onclick = function(){
+        studentSection.style.marginLeft = '-370px';
+        studentSection.style.marginRight = '370px';
+        toast.style.opacity = '1';
+        toast.style.right = '20px';
+        console.log(this.id);
+    }
 }
