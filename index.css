@@ -2,6 +2,7 @@ body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 #student-section{
     column-count: 6;
@@ -20,10 +21,10 @@ body{
     text-align: center;
     text-transform: uppercase;
     line-height: 0px;
+    color: white;
 }
 
 #toast{
-    width: 375px;
     position: fixed;
     right: -420px;
     top: 20px;
@@ -36,6 +37,7 @@ body{
     opacity: 0;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     border: solid 0.25px #EAEAEA;
+    padding-right: 100px;
 }
 
 #toast-profile-image{
@@ -46,11 +48,10 @@ body{
     margin: 10px;
 }
 #toast-text{
-    width: 115px;
     vertical-align: top;
     display: inline-block;
     position: relative;
-    margin-top: 14px;
+    margin: 14px 10px 0 0;
 }
 #toast-text h3{
     font-size: 14px;
@@ -73,6 +74,8 @@ body{
     display: inline-block;
     position: absolute;
     float: right;
+    right: 0;
+    top: 0;
     border-left: solid 1px #DBD7D7;
     height: 100%;
     vertical-align: top;

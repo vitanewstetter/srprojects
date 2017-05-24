@@ -224,7 +224,7 @@ for(var j = 0; j<allStudents.length; j++){
             var urlname = fullname.replace(/\s+/g, '-').toLowerCase();
 
             toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
-            toastSender.innerHTML = "from " + studentList[selected.id].firstname;
+            toastSender.innerHTML = 'from "' + fullname + '"';
             selected.url = studentList[selected.id].website;
         }else{
             //if a student is already selected, hide that popout, and slide out again with new student info
@@ -240,7 +240,7 @@ for(var j = 0; j<allStudents.length; j++){
                 toast.style.right = '20px';
 
                 toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
-                toastSender.innerHTML = "from " + studentList[selected.id].firstname;
+                toastSender.innerHTML = 'from "' + fullname + '"';
                 selected.url = studentList[selected.id].website;
             }, 600);
         }
