@@ -12,6 +12,14 @@ body{
     font-family: suisse-regular;
     src: url(assets/SuisseIntl-Regular.otf);
 }
+@font-face {
+    font-family: canela-medium;
+    src: url(assets/Canela-Medium.otf);
+}
+@font-face {
+    font-family: canela-regular;
+    src: url(assets/Canela-Regular.otf);
+}
 #student-section{
     column-count: 5;
     position: absolute;
@@ -33,6 +41,7 @@ body{
     cursor: pointer;
 }
 .student-name{
+    font-family: canela-regular, sans-serif;
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
@@ -45,12 +54,15 @@ body{
     position: fixed;
     width: 200px;
     margin: 40px 0px 20px 40px;
+    font-family: canela-regular, sans-serif;
 }
 #show-info-title{
     margin: 0;
+    font-family: canela-medium, sans-serif;
 }
 #show-info-description{
     font-size: 11px;
+    line-height: 14px;
     text-align: justify;
 }
 
