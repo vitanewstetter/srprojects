@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif;
+}
 #student-section{
     column-count: 6;
     position: absolute;
@@ -7,13 +10,15 @@
     width: calc(100% - 40px) !important;
     height: auto !important;
     margin: 20px;
+    border: solid 2px black;
+    cursor: pointer;
 }
 #toast{
-    width: 350px;
-    position: absolute;
-    right: -370px;
+    width: 375px;
+    position: fixed;
+    right: -420px;
     top: 20px;
-    height: 100px;
+    height: 80px;
     background: #ffffff;
     background: -moz-linear-gradient(top, #fafafa 0%, #f7f7f7 99%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #fafafa 0%, #f7f7f7 99%); /* Chrome10-25,Safari5.1-6 */
@@ -27,4 +32,58 @@
 .transition {
     -webkit-transition: all 600ms cubic-bezier(1, 0, 0, 1);
     transition: all 600ms cubic-bezier(1, 0, 0, 1);
+}
+
+#toast-profile-image{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    position: relative;
+    margin: 10px;
+}
+#toast-text{
+    width: 115px;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    margin-top: 14px;
+}
+#toast-text h3{
+    font-size: 14px;
+    line-height: 0px;
+}
+#toast-text p{
+    font-size: 12px;
+    line-height: 14px;
+}
+#toast-drop-image{
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    vertical-align: top;
+    margin: 10px 10px 0 0;
+}
+#toast-buttons{
+    display: inline-block;
+    position: absolute;
+    float: right;
+    border-left: solid 1px #DBD7D7;
+    height: 100%;
+    vertical-align: top;
+    font-weight: 800;
+    color: #3A3D3C;
+    font-size: 15px;
+    cursor: pointer;
+}
+.toast-button{
+    line-height: 40px;
+    width:80px;
+    padding: 0 10px;
+    margin: 0;
+    text-align: center;
+}
+#toast-decline{
+    border-bottom: solid 1px #DBD7D7;
 }
