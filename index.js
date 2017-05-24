@@ -199,6 +199,7 @@ for(var i=0; i<studentList.length; i++){
 
     var studentImg = document.createElement('img');
     studentImg.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
+    studentImg.classList.add('shadow');
 
     var studentName = document.createElement('p');
     studentName.innerHTML = fullname;

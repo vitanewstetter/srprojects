@@ -2,12 +2,14 @@ body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
 }
 #student-section{
     column-count: 6;
     position: absolute;
-
+    width: calc(100% - 40px);
+    max-width: 2640px;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 #student-section img{
     width: calc(100% - 40px) !important;
@@ -17,11 +19,10 @@ body{
     cursor: pointer;
 }
 .student-name{
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
     line-height: 0px;
-    color: white;
 }
 
 #toast{
@@ -99,4 +100,23 @@ body{
 .transition {
     -webkit-transition: all 600ms cubic-bezier(1, 0, 0, 1);
     transition: all 600ms cubic-bezier(1, 0, 0, 1);
+}
+.shadow {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1300px){
+    #student-section{
+        column-count: 5;
+    }
+}
+@media screen and (max-width: 900px){
+    #student-section{
+        column-count: 4;
+    }
+}
+@media screen and (max-width: 600px){
+    #student-section{
+        column-count: 2;
+    }
 }
