@@ -85,11 +85,13 @@ var  studentList =[
     "firstname": "Jordana",
     "lastname": "Attias",
     "website": "https://www.google.com/search?q=jordana+attias+dma+ucla"
-}, {
+},
+    {
     "firstname": "Justin",
     "lastname": "Piotroski",
     "website": "https://www.google.com/search?q=justin+piotroski+dma+ucla"
-}, {
+},
+    {
     "firstname": "Justine",
     "lastname": "Sto Thomas",
     "website": "https://www.google.com/search?q=justine+sto+thomas+dma+ucla"

@@ -8,8 +8,12 @@ body{
     position: absolute;
     width: calc(100% - 40px);
     max-width: 2640px;
-    margin-left: 50%;
     transform: translate(-50%);
+    margin: 10px 0 10px 50%;
+}
+.student-profile{
+    padding-bottom: 10px;
+    break-inside: avoid;
 }
 #student-section img{
     width: calc(100% - 40px) !important;
@@ -37,16 +41,18 @@ body{
     border-radius: 8px;
     opacity: 0;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    border: solid 0.25px #EAEAEA;
+    /*border: solid 0.25px #EAEAEA;*/
+    border: solid 2px black;
     padding-right: 100px;
 }
 
 #toast-profile-image{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 100%;
     position: relative;
-    margin: 10px;
+    margin: 13px;
+    border: solid 2px black;
 }
 #toast-text{
     vertical-align: top;
@@ -77,7 +83,8 @@ body{
     float: right;
     right: 0;
     top: 0;
-    border-left: solid 1px #DBD7D7;
+    /*border-left: solid 1px #DBD7D7;*/
+    border-left: solid 2px black;
     height: 100%;
     vertical-align: top;
     font-weight: 800;
@@ -93,7 +100,8 @@ body{
     text-align: center;
 }
 #toast-decline{
-    border-bottom: solid 1px #DBD7D7;
+    /*border-bottom: solid 1px #DBD7D7;*/
+    border-bottom: solid 2px black;
 }
 
 
