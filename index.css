@@ -127,8 +127,6 @@ body{
 #toast-decline{
     border-bottom: solid 4px black;
 }
-
-
 .transition {
     -webkit-transition: all 600ms cubic-bezier(1, 0, 0, 1);
     transition: all 600ms cubic-bezier(1, 0, 0, 1);
