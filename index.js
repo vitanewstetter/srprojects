@@ -177,7 +177,7 @@ var  studentList =[
 
 var selected = {id: null, url: '#'};
 var studentSection = document.getElementById('student-section');
-var __dirname ="";
+var __dirname ="/srprojects";
 
 var toast = document.getElementById('toast');
 var toastProfile = document.getElementById('toast-profile-image');
