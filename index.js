@@ -192,18 +192,20 @@ for(var i=0; i<studentList.length; i++){
     var fullname = studentList[i].firstname + " " + studentList[i].lastname;
     var urlname = fullname.replace(/\s+/g, '-').toLowerCase();
 
-    var target = '_self';
-    if (studentList[i].website !== '#') target = '_blank';
-
-    var student = document.createElement('a');
+    var student = document.createElement('div');
     student.classList.add('student-profile');
-    student.target = target;
+    student.target = '_blank';
     student.id = i;
 
     var studentImg = document.createElement('img');
     studentImg.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
 
+    var studentName = document.createElement('p');
+    studentName.innerHTML = fullname;
+    studentName.classList.add('student-name');
+
     student.appendChild(studentImg);
+    student.appendChild(studentName);
     studentSection.appendChild(student);
 }
 
