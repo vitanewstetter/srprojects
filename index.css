@@ -1,15 +1,25 @@
 body{
-    font-family: sans-serif;
+    font-family: suisse-regular, sans-serif;
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: suisse-bold;
+    src: url(assets/SuisseIntl-Bold.otf);
+}
+@font-face {
+    font-family: suisse-regular;
+    src: url(assets/SuisseIntl-Regular.otf);
+}
 #student-section{
-    column-count: 6;
+    column-count: 5;
     position: absolute;
-    width: calc(100% - 40px);
+    width: calc(100% - 280px);
     max-width: 2640px;
     transform: translate(-50%);
-    margin: 10px 0 10px 50%;
+    margin: 20px 0 10px 50%;
+    padding-left: 240px;
 }
 .student-profile{
     padding-bottom: 10px;
@@ -19,14 +29,29 @@ body{
     width: calc(100% - 40px) !important;
     height: auto !important;
     margin: 20px 20px 0px 20px;
-    border: solid 2px black;
+    border: solid 4px black;
     cursor: pointer;
 }
 .student-name{
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
     line-height: 0px;
+    font-weight: 800;
+}
+
+#show-info{
+    height: calc(100% - 20px);
+    position: fixed;
+    width: 200px;
+    margin: 40px 0px 20px 40px;
+}
+#show-info-title{
+    margin: 0;
+}
+#show-info-description{
+    font-size: 11px;
+    text-align: justify;
 }
 
 #toast{
@@ -41,7 +66,6 @@ body{
     border-radius: 8px;
     opacity: 0;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    /*border: solid 0.25px #EAEAEA;*/
     border: solid 2px black;
     padding-right: 100px;
 }
@@ -51,7 +75,7 @@ body{
     width: 50px;
     border-radius: 100%;
     position: relative;
-    margin: 13px;
+    margin: 11px;
     border: solid 2px black;
 }
 #toast-text{
@@ -61,11 +85,12 @@ body{
     margin: 14px 10px 0 0;
 }
 #toast-text h3{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 0px;
+    font-family: suisse-bold, sans-serif;
 }
 #toast-text p{
-    font-size: 12px;
+    font-size: 13px;
     line-height: 14px;
 }
 #toast-drop-image{
@@ -75,7 +100,7 @@ body{
     height: 60px;
     object-fit: contain;
     vertical-align: top;
-    margin: 10px 10px 0 0;
+    margin: 10px 13px 0 0;
 }
 #toast-buttons{
     display: inline-block;
@@ -83,11 +108,11 @@ body{
     float: right;
     right: 0;
     top: 0;
-    /*border-left: solid 1px #DBD7D7;*/
     border-left: solid 2px black;
     height: 100%;
     vertical-align: top;
     font-weight: 800;
+    font-family: suisse-bold, sans-serif;
     color: #3A3D3C;
     font-size: 15px;
     cursor: pointer;
@@ -100,7 +125,6 @@ body{
     text-align: center;
 }
 #toast-decline{
-    /*border-bottom: solid 1px #DBD7D7;*/
     border-bottom: solid 2px black;
 }
 
@@ -109,22 +133,36 @@ body{
     -webkit-transition: all 600ms cubic-bezier(1, 0, 0, 1);
     transition: all 600ms cubic-bezier(1, 0, 0, 1);
 }
-.shadow {
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
-}
 
+@media screen and (max-width: 1600px){
+    #student-section{
+        column-count: 4;
+    }
+    .student-name{
+        font-size: 0.9rem;
+    }
+}
 @media screen and (max-width: 1300px){
     #student-section{
-        column-count: 5;
+        column-count: 3;
+    }
+    .student-name{
+        font-size: 0.75rem;
     }
 }
 @media screen and (max-width: 900px){
     #student-section{
-        column-count: 4;
+        column-count: 2;
     }
+
 }
 @media screen and (max-width: 600px){
     #student-section{
-        column-count: 2;
+        column-count: 1;
+        width: calc(100% - 40px);
+        padding-left: 0px;
+    }
+    #show-info{
+        display: none;
     }
 }
