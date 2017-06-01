@@ -26,6 +26,10 @@ var  studentList =[
     "lastname": "Wen",
     "website": "https://www.google.com/search?q=chance+wen+dma+ucla"
 }, {
+    "firstname": "Chen Cheng",
+    "lastname": "Xiang",
+    "website": "https://www.google.com/search?q=chen+cheng+xiang+dma+ucla"
+    }, {
     "firstname": "Elena",
     "lastname": "Birgit Dick",
     "website": "https://www.google.com/search?q=elena+birgit+dick+dma+ucla"
@@ -226,6 +230,8 @@ for(var j = 0; j<allStudents.length; j++){
             var urlname = fullname.replace(/\s+/g, '-').toLowerCase();
 
             toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
+            // toastDrop.src = __dirname + '/assets/profile/'+ urlname + '-drop.png';
+            toastProfile.src = __dirname + '/assets/profile/allek-bien-profile.png';
             toastSender.innerHTML = 'from "' + fullname + '"';
             selected.url = studentList[selected.id].website;
         }else{
@@ -242,9 +248,11 @@ for(var j = 0; j<allStudents.length; j++){
                 toast.style.right = '20px';
 
                 toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
+                // toastDrop.src = __dirname + '/assets/profile/'+ urlname + '-drop.png';
+                toastProfile.src = __dirname + '/assets/profile/vita-newstetter-profile.png';
                 toastSender.innerHTML = 'from "' + fullname + '"';
                 selected.url = studentList[selected.id].website;
-            }, 600);
+            }, 500);
         }
     }
 }
