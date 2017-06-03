@@ -8,19 +8,19 @@ var  studentList =[
 }, {
     "firstname": "Alex",
     "lastname": "Madrid",
-    "website": "https://www.google.com/search?q=alex+madrid+dma+ucla"
+    "website": "http://alexander-madrid.com"
 }, {
     "firstname": "Allek",
     "lastname": "Bien",
-    "website": "https://www.google.com/search?q=allek+bien+dma+ucla"
+    "website": "http://cargocollective.com/allbien"
 }, {
     "firstname": "Anisa",
     "lastname": "Bashiri",
-    "website": "https://www.google.com/search?q=anisa+bashiri+dma+ucla"
+    "website": "http://anisa-bashiri.com/"
 }, {
     "firstname": "Austin",
     "lastname": "Yu",
-    "website": "https://www.google.com/search?q=austin+yu+dma+ucla"
+    "website": "austinyu.com"
 }, {
     "firstname": "Chance",
     "lastname": "Wen",
@@ -28,15 +28,15 @@ var  studentList =[
 }, {
     "firstname": "Chen Cheng",
     "lastname": "Xiang",
-    "website": "https://www.google.com/search?q=chen+cheng+xiang+dma+ucla"
+    "website": "https://youtu.be/w7MmsKzsf0c"
     }, {
     "firstname": "Elena",
     "lastname": "Birgit Dick",
-    "website": "https://www.google.com/search?q=elena+birgit+dick+dma+ucla"
+    "website": "http://www.elenabd.com/"
 }, {
     "firstname": "Erica",
     "lastname": "Young",
-    "website": "https://www.google.com/search?q=erica+young+dma+ucla"
+    "website": "http://cargocollective.com/xingxingart"
 }, {
     "firstname": "Erika",
     "lastname": "Kehrwald",
@@ -52,11 +52,11 @@ var  studentList =[
 }, {
     "firstname": "Hillary",
     "lastname": "Cleary",
-    "website": "https://www.google.com/search?q=hillary+cleary+dma+ucla"
+    "website": "http://www.hillarycleary.com"
 }, {
     "firstname": "Ho Man",
     "lastname": "Leung",
-    "website": "https://www.google.com/search?q=ho+man+leung+dma+ucla"
+    "website": "http://cargocollective.com/homanleung"
 }, {
     "firstname": "Hyesoo",
     "lastname": "Shin",
@@ -68,7 +68,7 @@ var  studentList =[
 }, {
     "firstname": "Jason",
     "lastname": "Farwell",
-    "website": "https://www.google.com/search?q=jason+farwell+dma+ucla"
+    "website": "http://jasfar.github.io/"
 },{
     "firstname": "Jason",
     "lastname": "Spielman",
@@ -80,29 +80,29 @@ var  studentList =[
 }, {
     "firstname": "Jessica",
     "lastname": "Rae Vergara",
-    "website": "https://www.google.com/search?q=jessica+rae+vergara+dma+ucla"
+    "website": "http://www.jessicaraevergara.com"
 }, {
     "firstname": "Jiamei",
     "lastname": "Deng",
-    "website": "https://www.google.com/search?q=jiamei+deng+dma+ucla"
+    "website": "http://www.jiameideng.com"
 }, {
     "firstname": "Jordana",
     "lastname": "Attias",
-    "website": "https://www.google.com/search?q=jordana+attias+dma+ucla"
+    "website": "https://www.jordanaattias.com/"
 },
     {
     "firstname": "Justin",
     "lastname": "Piotroski",
-    "website": "https://www.google.com/search?q=justin+piotroski+dma+ucla"
+    "website": "justinp.io"
 },
     {
     "firstname": "Justine",
     "lastname": "Sto Thomas",
-    "website": "https://www.google.com/search?q=justine+sto+thomas+dma+ucla"
+    "website": "http://www.cargocollective.com/justcara"
 }, {
     "firstname": "Kain",
     "lastname": "Suwannaphin",
-    "website": "https://www.google.com/search?q=kain+suwannaphin+dma+ucla"
+    "website": "http://www.kainnedesign.com"
 }, {
     "firstname": "Kayla",
     "lastname": "Eber",
@@ -110,23 +110,23 @@ var  studentList =[
 }, {
     "firstname": "Kelly",
     "lastname": "Brennan",
-    "website": "https://www.google.com/search?q=kelly+brennan+dma+ucla"
+    "website": "www.kellybrennan.com"
 }, {
     "firstname": "Mac",
     "lastname": "Le",
-    "website": "https://www.google.com/search?q=mac+le+dma+ucla"
+    "website": "http://devinboscole.com/"
 }, {
     "firstname": "Maddie",
     "lastname": "Avjean",
-    "website": "https://www.google.com/search?q=maddie+avjean+dma+ucla"
+    "website": "avjean.com"
 }, {
     "firstname": "Michael",
     "lastname": "Becker",
-    "website": "https://www.google.com/search?q=michael+becker+dma+ucla"
+    "website": "http://mjamesbecker.com"
 }, {
     "firstname": "Nathan",
     "lastname": "Chan",
-    "website": "https://www.google.com/search?q=nathan+chan+dma+ucla"
+    "website": "http://www.i-m-n8.com"
 }, {
     "firstname": "Nathan",
     "lastname": "Dwarika",
@@ -142,15 +142,15 @@ var  studentList =[
 }, {
     "firstname": "Peter",
     "lastname": "Ju",
-    "website": "https://www.google.com/search?q=peter+ju+dma+ucla"
+    "website": "https://peter-ju.squarespace.com"
 }, {
     "firstname": "Qiqi",
     "lastname": "Zuo",
-    "website": "https://www.google.com/search?q=qiqi+zuo+dma+ucla"
+    "website": "http://cargocollective.com/cargoqiqi"
 }, {
     "firstname": "Rob Tom",
     "lastname": "Browning",
-    "website": "https://www.google.com/search?q=rob+tom+browning+dma+ucla"
+    "website": "http://robtom.red"
 }, {
     "firstname": "Ryan",
     "lastname": "Thomas",
@@ -158,27 +158,27 @@ var  studentList =[
 }, {
     "firstname": "Sara",
     "lastname": "Haas",
-    "website": "https://www.google.com/search?q=sara+haas+dma+ucla"
+    "website": "http://www.sara-haas.com"
 }, {
     "firstname": "Syd",
     "lastname": "Rein",
-    "website": "https://www.google.com/search?q=syd+rein+dma+ucla"
+    "website": "http://www.sydrein.com"
 }, {
     "firstname": "Tara",
     "lastname": "Dilloughery",
-    "website": "https://www.google.com/search?q=tara+dilloughery+dma+ucla"
+    "website": "http://cargocollective.com/taradilloughery"
 }, {
     "firstname": "Tiffany",
     "lastname": "Taimoorazy",
-    "website": "https://www.google.com/search?q=tiffany+taimoorazy+dma+ucla"
+    "website": "http://www.tifftam.co"
 }, {
     "firstname": "Vita",
     "lastname": "Newstetter",
-    "website": "https://www.google.com/search?q=vita+newstetter+dma+ucla"
+    "website": "http://vitanewstetter.com/"
 }, {
     "firstname": "Zichao",
     "lastname": "Xu",
-    "website": "https://www.google.com/search?q=zichao+xu+dma+ucla"
+    "website": "http://cargocollective.com/xzc"
 }];
 
 var selected = {id: null, url: '#'};
