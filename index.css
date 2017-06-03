@@ -89,6 +89,7 @@ body{
     position: relative;
     margin: 9px;
     border: solid 3px black;
+    object-fit: cover;
 }
 #toast-text{
     vertical-align: top;

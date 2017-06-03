@@ -248,8 +248,7 @@ for(var j = 0; j<allStudents.length; j++){
                 toast.style.right = '20px';
 
                 toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
-                // toastDrop.src = __dirname + '/assets/profile/'+ urlname + '-drop.png';
-                toastProfile.src = __dirname + '/assets/profile/vita-newstetter-profile.png';
+                toastProfile.src = __dirname + '/assets/profile/'+ urlname + '-profile.png';
                 toastSender.innerHTML = 'from "' + fullname + '"';
                 selected.url = studentList[selected.id].website;
             }, 500);
