@@ -144,6 +144,9 @@ body{
     -webkit-transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
     transition:         all 500ms cubic-bezier(0.86, 0, 0.07, 1);
 }
+#mobile-nav{
+    display: none;
+}
 
 @media screen and (max-width: 1600px){
     #student-section{
@@ -174,6 +177,64 @@ body{
         padding-left: 0px;
     }
     #show-info{
+        opacity: 0;
+        display: none;
+        height: calc(100% - 60px);
+        width: calc(100% - 60px);
+        background-color: white;
+        z-index: 20;
+        position: fixed;
+        top:0;
+        left: 0;
+        margin: 0;
+        padding: 30px;
+
+    }
+    #toast{
+        position: fixed;
+        width: calc(100% - 146px);
+        right: 20px;
+        top: -100px;
+        padding-right: 100px;
+    }
+    #toast-buttons{
+        font-size: 13px;
+    }
+    .toast-button{
+        width:50px;
+    }
+    #toast-drop-image{
         display: none;
     }
+    #mobile-nav{
+        background-color: white;
+        height: 50px;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 10;
+        border-top: solid 3px black;
+        font-family: canela-regular, sans-serif;
+        font-size: 20px;
+        line-height: 15px;
+    }
+    #mobile-nav p{
+        padding: 0px 10px;
+        display: inline-block;
+    }
+    #mobile-info{
+        float: right;
+        width: 50px;
+        background-color: black;
+        color: white;
+        display: inline-block;
+        height: 100%;
+        margin: 0;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 20px;
+        cursor: pointer;
+    }
+
 }

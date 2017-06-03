@@ -189,6 +189,8 @@ var toast = document.getElementById('toast');
 var toastProfile = document.getElementById('toast-profile-image');
 var toastDrop = document.getElementById('toast-drop-image');
 var toastSender = document.getElementById('toast-sender');
+var mobile = document.getElementById('mobile-info');
+var info = document.getElementById('show-info');
 
 var accept = document.getElementById('toast-accept');
 var decline = document.getElementById('toast-decline');
@@ -224,20 +226,25 @@ for(var j = 0; j<allStudents.length; j++){
         if(selected.id == null){
             toast.style.opacity = '1';
             toast.style.right = '20px';
+            toast.style.top = '20px';
 
             selected.id = this.id;
             var fullname = studentList[selected.id].firstname + " " + studentList[selected.id].lastname;
             var urlname = fullname.replace(/\s+/g, '-').toLowerCase();
 
             toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
-            // toastDrop.src = __dirname + '/assets/profile/'+ urlname + '-drop.png';
-            toastProfile.src = __dirname + '/assets/profile/allek-bien-profile.png';
+            toastProfile.src = __dirname + '/assets/profile/'+ urlname + '-profile.png';
             toastSender.innerHTML = 'from "' + fullname + '"';
             selected.url = studentList[selected.id].website;
         }else{
             //if a student is already selected, hide that popout, and slide out again with new student info
             toast.style.opacity = '0';
-            toast.style.right = '-420px';
+            var width = getWidth();
+            if(width < 600){
+                toast.style.top = '-100px';
+            }else{
+                toast.style.right = '-420px';
+            }
             selected.id = this.id;
             var fullname = studentList[selected.id].firstname + " " + studentList[selected.id].lastname;
             var urlname = fullname.replace(/\s+/g, '-').toLowerCase();
@@ -246,6 +253,7 @@ for(var j = 0; j<allStudents.length; j++){
             setTimeout(function(){
                 toast.style.opacity = '1';
                 toast.style.right = '20px';
+                toast.style.top = '20px';
 
                 toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
                 toastProfile.src = __dirname + '/assets/profile/'+ urlname + '-profile.png';
@@ -260,14 +268,34 @@ accept.onclick =  function(){
     console.log(selected.url);
     window.open(selected.url, '_blank');
     toast.style.opacity = '1';
-    toast.style.right = '-420px';
+    var width = getWidth();
+    if(width < 600){
+        toast.style.top = '-100px';
+    }else{
+        toast.style.right = '-420px';
+    };
 };
 
 decline.onclick =  function(){
     selected.id = null;
     selected.url = '#';
     toast.style.opacity = '0';
-    toast.style.right = '-420px';
+    var width = getWidth();
+    if(width < 600){
+        toast.style.top = '-100px';
+    }else{
+        toast.style.right = '-420px';
+    };
+};
+
+mobile.onclick = function(){
+    info.style.opacity = 1;
+    info.style.display = "block";
 };
 
 
+function getWidth() {
+    if (self.innerWidth) {return self.innerWidth;}
+    if (document.documentElement && document.documentElement.clientWidth) {
+        return document.documentElement.clientWidth;}
+    if (document.body) { return document.body.clientWidth;}}
