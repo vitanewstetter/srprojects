@@ -20,7 +20,7 @@ var  studentList =[
 }, {
     "firstname": "Austin",
     "lastname": "Yu",
-    "website": "austinyu.com"
+    "website": "http://www.austinyu.com/"
 }, {
     "firstname": "Chance",
     "lastname": "Wen",
@@ -93,7 +93,7 @@ var  studentList =[
     {
     "firstname": "Justin",
     "lastname": "Piotroski",
-    "website": "justinp.io"
+    "website": "http://justinp.io/"
 },
     {
     "firstname": "Justine",
@@ -110,7 +110,7 @@ var  studentList =[
 }, {
     "firstname": "Kelly",
     "lastname": "Brennan",
-    "website": "www.kellybrennan.com"
+    "website": "http://www.kellybrennan.com/"
 }, {
     "firstname": "Mac",
     "lastname": "Le",
@@ -118,7 +118,7 @@ var  studentList =[
 }, {
     "firstname": "Maddie",
     "lastname": "Avjean",
-    "website": "avjean.com"
+    "website": "http://avjean.com/"
 }, {
     "firstname": "Michael",
     "lastname": "Becker",
@@ -183,17 +183,22 @@ var  studentList =[
 
 var selected = {id: null, url: '#'};
 var studentSection = document.getElementById('student-section');
-var __dirname ="/srprojects";
+var __dirname = "";
+//var __dirname = "/srprojects";
 
 var toast = document.getElementById('toast');
 var toastProfile = document.getElementById('toast-profile-image');
 var toastDrop = document.getElementById('toast-drop-image');
 var toastSender = document.getElementById('toast-sender');
 var mobile = document.getElementById('mobile-info');
+var mobileNav = document.getElementById('mobile-nav');
 var info = document.getElementById('show-info');
+var xOut = document.getElementById('mobile-x-out');
 
 var accept = document.getElementById('toast-accept');
 var decline = document.getElementById('toast-decline');
+
+var loading = document.getElementById('loading');
 
 //add image for each student
 for(var i=0; i<studentList.length; i++){
@@ -218,7 +223,11 @@ for(var i=0; i<studentList.length; i++){
 }
 
 var allStudents = document.querySelectorAll(".student-profile");
-
+window.onload = function(){
+    loading.style.display = 'none';
+    studentSection.style.opacity = 1;
+    info.style.opacity = 1;
+};
 //handle click on student
 for(var j = 0; j<allStudents.length; j++){
     allStudents[j].onclick = function(){
@@ -234,7 +243,15 @@ for(var j = 0; j<allStudents.length; j++){
 
             toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
             toastProfile.src = __dirname + '/assets/profile/'+ urlname + '-profile.png';
-            toastSender.innerHTML = 'from "' + fullname + '"';
+
+            toast.style.opacity = '1';
+
+            var width = getWidth();
+            if(width < 600){
+                toastSender.innerHTML = 'from "' + studentList[selected.id].firstname + '"';
+            }else{
+                toastSender.innerHTML = 'from "' + fullname + '"';
+            }
             selected.url = studentList[selected.id].website;
         }else{
             //if a student is already selected, hide that popout, and slide out again with new student info
@@ -257,7 +274,11 @@ for(var j = 0; j<allStudents.length; j++){
 
                 toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
                 toastProfile.src = __dirname + '/assets/profile/'+ urlname + '-profile.png';
-                toastSender.innerHTML = 'from "' + fullname + '"';
+                if(width < 600){
+                    toastSender.innerHTML = 'from "' + studentList[selected.id].firstname + '"';
+                }else{
+                    toastSender.innerHTML = 'from "' + fullname + '"';
+                }
                 selected.url = studentList[selected.id].website;
             }, 500);
         }
@@ -273,7 +294,11 @@ accept.onclick =  function(){
         toast.style.top = '-100px';
     }else{
         toast.style.right = '-420px';
-    };
+
+        var fullname = studentList[selected.id].firstname + " " + studentList[selected.id].lastname;
+        var urlname = fullname.replace(/\s+/g, '-').toLowerCase();
+        accept.href = __dirname + '/assets/drops/'+ urlname + '-drop.png';
+    }
 };
 
 decline.onclick =  function(){
@@ -291,6 +316,14 @@ decline.onclick =  function(){
 mobile.onclick = function(){
     info.style.opacity = 1;
     info.style.display = "block";
+    studentSection.display = "none";
+    mobileNav.display = "none";
+};
+xOut.onclick = function(){
+    info.style.opacity = 0;
+    info.style.display = "none";
+    studentSection.display = "block"
+    mobileNav.display = "block";
 };
 
 
