@@ -211,7 +211,7 @@ for(var i=0; i<studentList.length; i++){
     student.id = i;
 
     var studentImg = document.createElement('img');
-    studentImg.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
+    studentImg.src = __dirname + './assets/drops/'+ urlname + '-drop.png';
 
     var studentName = document.createElement('p');
     studentName.innerHTML = fullname;
@@ -241,8 +241,8 @@ for(var j = 0; j<allStudents.length; j++){
             var fullname = studentList[selected.id].firstname + " " + studentList[selected.id].lastname;
             var urlname = fullname.replace(/\s+/g, '-').toLowerCase();
 
-            toastDrop.src = __dirname + '/assets/drops/'+ urlname + '-drop.png';
-            toastProfile.src = __dirname + '/assets/profile/'+ urlname + '-profile.png';
+            toastDrop.src = __dirname + './assets/drops/'+ urlname + '-drop.png';
+            toastProfile.src = __dirname + './assets/profile/'+ urlname + '-profile.png';
 
             toast.style.opacity = '1';
 
